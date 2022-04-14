@@ -1,0 +1,52 @@
+.NoteList {
+   width: 100%;
+   height: 50vh;
+   overflow-y: auto;
+}
+
+.NoteList li, .listHeader {
+   width: 100%;
+   margin-top: 1rem;
+   background-color: aliceblue;
+   display: grid;
+   align-items: center;
+   grid-template-columns: 1fr 1fr 1fr 100px 100px;
+   gap: 0.5rem;
+   border-radius: var(--borderRadius);
+   padding: 0.5rem;
+}
+
+.NoteList li p {
+    margin: 0;
+    text-align: center;
+}
+
+.listHeader {
+    background-color: var(--white);
+    height: 3rem;
+    border-bottom: 0.25rem solid var(--primary-300);
+    box-shadow: var(--shadow-3);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.listHeader p {
+    text-align: center;
+}
+
+.searchNotFound {
+    display: block !important;
+    background-color: var(--red-light) !important;
+    color: var(--red-dark);
+    border-radius: var(--borderRadius);
+    padding: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width:800px) {
+    .tohide { display: none; }
+    .NoteList li, .listHeader {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }

@@ -1,0 +1,25 @@
+.notePageHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notePageHeader h4 {
+    color: var(--primary-300);
+    text-align: center;
+    margin: 0;
+}
+
+.notesContainer {
+    min-height: 90%;
+}
+
+/* Print */
+
+  
+@media print {
+
+    .notePageHeader {
+        display: none;
+    }
+  }

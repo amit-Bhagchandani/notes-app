@@ -1,0 +1,25 @@
+.Modal {
+    position: absolute;
+    background-color: #b4a4a462;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.Modal form {
+    position: relative;
+}
+
+.cancle {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: var(--red-dark);
+    text-align: center;
+}
+
+.cancle:hover {
+    cursor: pointer;
+}
